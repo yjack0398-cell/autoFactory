@@ -1,0 +1,80 @@
+/* src/app/(dashboard)/category/[categoryId]/content/content.module.css */
+.dateScroller {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+.dateCard {
+  min-width: 120px;
+  padding: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dateCardActive {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: white;
+  box-shadow: var(--shadow-md);
+}
+.dateLabel {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.volumeIndicator {
+  width: 100%;
+  border-radius: 99px;
+  height: 6px;
+  background: var(--border);
+  overflow: hidden;
+}
+.volumeFill {
+  height: 100%;
+  background: #10b981;
+}
+.dateCardActive .volumeIndicator {
+  background: rgba(255,255,255,0.3);
+}
+.dateCardActive .volumeFill {
+  background: white;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+.postCard {
+  background: var(--surface);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+.platform {
+  font-size: 0.8rem;
+  color: var(--primary);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  background: rgba(79, 70, 229, 0.1);
+  border-radius: 99px;
+}
+.title {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+}
+.meta {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
