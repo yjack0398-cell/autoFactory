@@ -1,0 +1,5 @@
+{
+  "/(dashboard)/category/[categoryId]/content/page": "app/(dashboard)/category/[categoryId]/content/page.js",
+  "/(dashboard)/category/[categoryId]/settings/page": "app/(dashboard)/category/[categoryId]/settings/page.js",
+  "/(dashboard)/category/[categoryId]/report/page": "app/(dashboard)/category/[categoryId]/report/page.js"
+}

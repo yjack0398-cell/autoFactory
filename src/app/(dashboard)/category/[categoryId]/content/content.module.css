@@ -1,80 +1,105 @@
 /* src/app/(dashboard)/category/[categoryId]/content/content.module.css */
 .dateScroller {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   overflow-x: auto;
-  padding-bottom: 1rem;
-  margin-bottom: 2rem;
+  padding: 0.5rem 0.2rem 1rem 0.2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px dashed var(--border);
 }
 .dateCard {
-  min-width: 120px;
-  padding: 1rem;
+  min-width: 90px;
+  padding: 0.8rem 0.5rem;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.2s cubic-bezier(0.1, 0.7, 1.0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.dateCard:hover {
+  border-color: var(--neon-cyan);
+  background: rgba(0, 243, 255, 0.05);
 }
 .dateCardActive {
-  border-color: var(--primary);
-  background: var(--primary);
-  color: white;
-  box-shadow: var(--shadow-md);
+  border: 2px solid var(--neon-cyan);
+  background: rgba(0, 243, 255, 0.15);
+  box-shadow: inset 0 0 10px rgba(0, 243, 255, 0.2);
+}
+.dateCardActive::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--neon-magenta);
+  box-shadow: 0 0 10px var(--neon-magenta);
 }
 .dateLabel {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+  font-weight: 900;
+  margin-bottom: 0.4rem;
+  letter-spacing: 1px;
 }
 .volumeIndicator {
   width: 100%;
-  border-radius: 99px;
-  height: 6px;
-  background: var(--border);
-  overflow: hidden;
+  height: 4px;
+  background: #111;
+  border: 1px solid #333;
 }
 .volumeFill {
   height: 100%;
-  background: #10b981;
-}
-.dateCardActive .volumeIndicator {
-  background: rgba(255,255,255,0.3);
-}
-.dateCardActive .volumeFill {
-  background: white;
+  background: var(--neon-cyan);
+  box-shadow: 0 0 5px var(--neon-cyan);
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
 }
 .postCard {
-  background: var(--surface);
-  padding: 1.5rem;
-  border-radius: var(--radius-lg);
+  background: rgba(13, 13, 30, 0.7);
+  padding: 1rem;
   border: 1px solid var(--border);
-  box-shadow: var(--shadow-sm);
+  position: relative;
+  transition: all 0.2s;
+}
+.postCard:hover {
+  border-color: var(--neon-magenta);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 0, 255, 0.1);
+}
+.postCard::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-width: 0 0 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent var(--background) transparent;
 }
 .platform {
-  font-size: 0.8rem;
-  color: var(--primary);
-  font-weight: bold;
+  font-size: 10px;
+  color: #000;
+  background: var(--neon-cyan);
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 0.1rem 0.5rem;
   margin-bottom: 0.5rem;
-  display: inline-block;
-  padding: 0.2rem 0.6rem;
-  background: rgba(79, 70, 229, 0.1);
-  border-radius: 99px;
 }
 .title {
-  margin: 0 0 1rem 0;
-  font-size: 1.1rem;
+  margin: 0 0 0.8rem 0;
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #fff;
 }
 .meta {
-  color: var(--text-muted);
-  font-size: 0.9rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  color: var(--neon-yellow);
+  font-size: 0.75rem;
+  font-weight: bold;
+  opacity: 0.7;
 }

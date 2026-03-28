@@ -1,0 +1,108 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/(dashboard)/category/[categoryId]/report/report.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* src/app/(dashboard)/category/[categoryId]/report/report.module.css */
+.report_container__Iz5qx {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+.report_feed__faAym {
+  flex: 7 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.report_blackboard__Dzn3m {
+  flex: 3 1;
+  background: var(--surface);
+  border: 1px solid var(--neon-magenta);
+  padding: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1rem;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.1);
+}
+.report_reportCard__fqDGZ {
+  background: rgba(13, 13, 30, 0.8);
+  border-left: 4px solid var(--neon-cyan);
+  padding: 1.5rem;
+  box-shadow: 0 0 15px rgba(0, 243, 255, 0.05);
+}
+.report_reportDate__PmMI_ {
+  font-size: 1.2rem;
+  font-weight: 950;
+  margin: 0 0 1rem 0;
+  color: var(--neon-cyan);
+  text-shadow: 0 0 5px var(--neon-cyan);
+  text-transform: uppercase;
+}
+.report_summary__cVBX_ {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  padding: 0.8rem;
+  background: rgba(0, 243, 255, 0.05);
+  border: 1px dashed var(--neon-cyan);
+  position: relative;
+}
+.report_summary__cVBX_::before {
+  content: "AI ANALYSIS";
+  position: absolute;
+  top: -8px;
+  right: 10px;
+  font-size: 8px;
+  background: var(--background);
+  padding: 0 4px;
+  color: var(--neon-cyan);
+}
+.report_topicGrid__Ux66m {
+  display: grid;
+  grid-gap: 0.8rem;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+}
+.report_topicItem__EHG8e {
+  border: 1px solid var(--border);
+  padding: 0.8rem;
+  background: rgba(255, 255, 255, 0.02);
+  transition: all 0.2s;
+}
+.report_topicItem__EHG8e:hover {
+  border-color: var(--neon-yellow);
+}
+.report_topicTitle__Rg6bq {
+  font-weight: 900;
+  margin: 0 0 0.4rem 0;
+  color: var(--neon-yellow);
+  font-size: 13px;
+}
+.report_tag__O_lZy {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  background: transparent;
+  border: 1px solid var(--border);
+  font-size: 10px;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+.report_tag__O_lZy:hover {
+  color: var(--neon-magenta);
+  border-color: var(--neon-magenta);
+  box-shadow: 0 0 8px var(--neon-magenta);
+}
+.report_blackboardTitle__r2mo9 {
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--neon-magenta);
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  border-bottom: 1px solid var(--neon-magenta);
+  padding-bottom: 0.3rem;
+}
+

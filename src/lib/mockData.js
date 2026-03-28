@@ -33,9 +33,13 @@ export const MOCK_REPORTS = [
 ];
 
 export const MOCK_POSTS = [
-  { id: "p1", date: "2026-03-28", title: "Claude 3 超越 GPT-4 的几个瞬间", platform: "小红书", likes: 1205 },
-  { id: "p2", date: "2026-03-28", title: "用 Cursor 半天写完一个全栈 App", platform: "B站", likes: 8900 },
-  { id: "p3", date: "2026-03-27", title: "放弃 VSCode，全面拥抱 AI 编辑器", platform: "抖音", likes: 45000 }
+  { id: "p1", date: "2026-03-28", title: "Claude 3.5 Sonnet: The end of manual coding?", platform: "Twitter", likes: 25400 },
+  { id: "p2", date: "2026-03-28", title: "The rise of 'Vibe Coding' in 2026", platform: "Reddit", likes: 12800 },
+  { id: "p3", date: "2026-03-28", title: "Claude 3 超越 GPT-4 的几个瞬间", platform: "小红书", likes: 1205 },
+  { id: "p4", date: "2026-03-28", title: "用 Cursor 半天写完一个全栈 App", platform: "B站", likes: 8900 },
+  { id: "p5", date: "2026-03-27", title: "Is Devin actually overhyped? A deep dive.", platform: "Twitter", likes: 18200 },
+  { id: "p6", date: "2026-03-27", title: "New open source model beats Llama-3 in coding", platform: "Reddit", likes: 34500 },
+  { id: "p7", date: "2026-03-27", title: "放弃 VSCode，全面拥抱 AI 编辑器", platform: "抖音", likes: 45000 }
 ];
 
 export async function getCategories() {

@@ -10,7 +10,9 @@ export default function SettingsPage() {
         <div className={styles.formGroup}>
           <label className={styles.label}>监控平台</label>
           <div className={styles.desc}>选择此分类下需要爬取并分析的内容平台。</div>
-          <div style={{display: 'flex', gap: '1rem'}}>
+          <div style={{display: 'flex', gap: '1rem', flexWrap: 'wrap'}}>
+            <label><input type="checkbox" defaultChecked /> Twitter (X)</label>
+            <label><input type="checkbox" defaultChecked /> Reddit</label>
             <label><input type="checkbox" defaultChecked /> 小红书</label>
             <label><input type="checkbox" defaultChecked /> 抖音</label>
             <label><input type="checkbox" /> B站</label>
